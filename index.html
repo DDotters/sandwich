@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandwich Recipes</title>
+    <style>
+        html{
+            background-color: #22603e;
+        }
+        .back {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            box-sizing: border-box;
+            width: 100%;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header {
+            position: fixed;
+            top: 0; left: 0;
+            box-sizing: border-box;
+            width: 100%; height: 15%;
+            z-index: 20;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo {
+            box-sizing: border-box;
+            width: 10%; height: 40%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            z-index: 20;
+            padding: 10px;
+            font-size: 3vmin;
+            font-family: Helvetica;
+        }
+        .container {
+            position: absolute;
+            top: 15%; left: 0;
+            box-sizing: border-box;
+            width: 100%; height: 85%;
+            z-index: 20;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .sandwich {
+            position: fixed;
+            top: 15%;
+            box-sizing: border-box;
+            width: 45%; height: 70%;
+            z-index: 20;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2%;
+        }
+        .box{
+            position: fixed;
+            top: 80%;
+            background-color: #f9f9f4;
+            box-sizing:content-box;
+            width: 80%; height: auto;
+            z-index: 20;
+            display: flex;
+            flex-direction:column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 2%;
+        }
+        a{
+            width: 60%; height: 100px;
+            border: 1px solid #22603e;
+            margin: 5px;
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+        }
+        @media screen and (max-width: 820px){
+            .header{
+                height: 10%;
+            }
+            .logo {
+                width: 25%;
+            }
+            .container {
+                top: 10%;
+                height: 90%;
+            }
+            .tablet {
+                width: 70%;
+            }
+            .sandwich {
+                top: 0;
+                width: 90%;
+            }
+            .box{
+                top: 60%;
+            }
+        }
+        @media screen and (max-width: 420px){
+            .header{
+                height: 10%;
+            }
+            .logo {
+            width: 25%;
+            }
+            .container {
+            top: 10%;
+            height: 90%;
+            }
+            .tablet {
+            width: 80%; height: 60%;
+            }
+            .sandwich {
+            top: 0;
+            width: 90%;
+            }
+            .box{
+                top: 60%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="back">
+            <img src="photo/back.png" width="100%">
+        </div>
+        <div class="logo">
+            <img src="photo/logo.png" width="100%">
+        </div>
+    </div>
+    <div class="container">
+        <div class="sandwich">
+            <img src="photo/home.png" width="100%">
+        </div>
+        <div class="box">
+            <hr>
+            <h1>DD SANDWICH Recipes</h1>
+            <hr>
+            <a href="diet.html">Diet<br>Sandwich<br>Recipe<br></a>
+            <a href="picnic.html">Picnic<br>Sandwich<br>Recipe<br></a>
+        </div>
+    </div>
+</body>
+</html>
